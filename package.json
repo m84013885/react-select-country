@@ -1,6 +1,5 @@
 {
-  "name": "react-select-country",
-  "private": true,
+  "name": "react-select-country-mw",
   "version": "0.0.0",
   "type": "module",
   "scripts": {
@@ -10,12 +9,13 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "react": "^18.3.1",
-    "react-dom": "^18.3.1",
     "tiny-pinyin-mw": "^0.0.2"
   },
   "devDependencies": {
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
     "@eslint/js": "^9.15.0",
+    "@types/node": "^22.10.1",
     "@types/react": "^18.3.12",
     "@types/react-dom": "^18.3.1",
     "@vitejs/plugin-react": "^4.3.4",
@@ -29,5 +29,25 @@
     "typescript": "~5.6.2",
     "typescript-eslint": "^8.15.0",
     "vite": "^6.0.1"
-  }
+  },
+  "peerDependencies": {
+    "react": "^17.0.0",
+    "react-dom": "^17.0.0"
+  },
+  "keywords": [
+    "select",
+    "country",
+    "region",
+    "select country",
+    "select region"
+  ],
+  "author": "m84013885",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/m84013885/react-select-country/issues"
+  },
+  "homepage": "https://github.com/m84013885/react-select-country#readme",
+  "files": [
+    "dist"
+  ]
 }
