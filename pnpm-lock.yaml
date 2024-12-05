@@ -8,12 +8,9 @@ importers:
 
   .:
     dependencies:
-      react:
-        specifier: ^18.3.1
-        version: 18.3.1
-      react-dom:
-        specifier: ^18.3.1
-        version: 18.3.1(react@18.3.1)
+      react-select-country-mw:
+        specifier: ^0.0.0
+        version: 0.0.0(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       tiny-pinyin-mw:
         specifier: ^0.0.2
         version: 0.0.2
@@ -51,6 +48,12 @@ importers:
       globals:
         specifier: ^15.12.0
         version: 15.13.0
+      react:
+        specifier: ^18.3.1
+        version: 18.3.1
+      react-dom:
+        specifier: ^18.3.1
+        version: 18.3.1(react@18.3.1)
       tailwindcss:
         specifier: ^3.4.16
         version: 3.4.16
@@ -1162,6 +1165,12 @@ packages:
   react-refresh@0.14.2:
     resolution: {integrity: sha512-jCvmsr+1IUSMUyzOkRcvnVbX3ZYC6g9TDrDbFuFmRDq7PD4yaGbLKNQL6k2jnArV8hjYxh7hVhAZB6s9HDGpZA==}
     engines: {node: '>=0.10.0'}
+
+  react-select-country-mw@0.0.0:
+    resolution: {integrity: sha512-SEoDYjeUrM4vFpydIw+yS5sFN9ldgyGSn6vLgItWUO/eROtHlAGMxk2obfT5DANCagxoAEpuhfwi90GiHe+RWA==}
+    peerDependencies:
+      react: ^17.0.0
+      react-dom: ^17.0.0
 
   react@18.3.1:
     resolution: {integrity: sha512-wS+hAgJShR0KhEvPJArfuPVN1+Hz1t0Y6n5jLrGQbkb4urgPE/0Rve+1kMB1v/oWgHgm4WIcV+i7F2pTVj+2iQ==}
@@ -2411,6 +2420,12 @@ snapshots:
       scheduler: 0.23.2
 
   react-refresh@0.14.2: {}
+
+  react-select-country-mw@0.0.0(react-dom@18.3.1(react@18.3.1))(react@18.3.1):
+    dependencies:
+      react: 18.3.1
+      react-dom: 18.3.1(react@18.3.1)
+      tiny-pinyin-mw: 0.0.2
 
   react@18.3.1:
     dependencies:
