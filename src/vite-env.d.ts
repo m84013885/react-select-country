@@ -1,2 +1,2 @@
 /// <reference types="vite/client" />
-declare module 'react-select-country-mw'
+// declare module 'react-select-country-mw'
