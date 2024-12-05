@@ -3,7 +3,11 @@
 ## 预览
 当是zh-CN时是以拼音排序，其余情况以英文排序
 
-![alt text](image-2.png)![alt text](image-1.png)![alt text](image.png)
+<div style="display: flex; justify-content: space-between;">
+  <img src="image-2.png" alt="alt text" style="width: 30%;"/>
+  <img src="image-1.png" alt="alt text" style="width: 30%;"/>
+  <img src="image.png" alt="alt text" style="width: 30%;"/>
+</div>
 
 ## 安装
 ```
