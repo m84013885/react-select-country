@@ -7,6 +7,6 @@ import ReactSelectCountry from 'react-select-country-mw'
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
     {/* <App language='zh-HK' height={500} letterListHide={true} arrowHide={true} /> */}
-    <ReactSelectCountry/>
-  </StrictMode>,
+    <ReactSelectCountry language='zh-CN' />
+  </StrictMode>
 )
