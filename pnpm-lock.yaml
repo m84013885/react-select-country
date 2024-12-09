@@ -9,8 +9,8 @@ importers:
   .:
     dependencies:
       react-select-country-mw:
-        specifier: ^0.0.2
-        version: 0.0.2(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(tiny-pinyin-mw@0.0.2)
+        specifier: ^0.0.3
+        version: 0.0.3(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(tiny-pinyin-mw@0.0.2)
       tiny-pinyin-mw:
         specifier: ^0.0.2
         version: 0.0.2
@@ -1174,6 +1174,13 @@ packages:
 
   react-select-country-mw@0.0.2:
     resolution: {integrity: sha512-VV95M7fbNNIwu2Kzx4FEuO1xtWZnUM8sHmLdyS7qdNn3yHPBpT+RYW5u6qOZkc2nzf65ZeSLu7GbZtHJe8Ow+g==}
+    peerDependencies:
+      react: '>=16.8.0'
+      react-dom: '>=16.8.0'
+      tiny-pinyin-mw: ^0.0.2
+
+  react-select-country-mw@0.0.3:
+    resolution: {integrity: sha512-h1dz8mdCFvonJURxxvKTPcvZNgdbm+ETBmhCutRrMaWS0iBCXMpD6dJrJsTwL/INTsnju74RB70YunsGZF0SvQ==}
     peerDependencies:
       react: '>=16.8.0'
       react-dom: '>=16.8.0'
@@ -2439,6 +2446,13 @@ snapshots:
       react: 18.3.1
       react-dom: 18.3.1(react@18.3.1)
       react-select-country-mw: 0.0.0(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      tiny-pinyin-mw: 0.0.2
+
+  react-select-country-mw@0.0.3(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(tiny-pinyin-mw@0.0.2):
+    dependencies:
+      react: 18.3.1
+      react-dom: 18.3.1(react@18.3.1)
+      react-select-country-mw: 0.0.2(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(tiny-pinyin-mw@0.0.2)
       tiny-pinyin-mw: 0.0.2
 
   react@18.3.1:

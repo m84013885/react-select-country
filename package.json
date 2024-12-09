@@ -9,7 +9,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "react-select-country-mw": "^0.0.2",
+    "react-select-country-mw": "^0.0.3",
     "tiny-pinyin-mw": "^0.0.2"
   },
   "devDependencies": {
