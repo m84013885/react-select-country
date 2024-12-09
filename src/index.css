@@ -2,22 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-@font-face {
-  font-family: 'PingFang HK';
-  src: url('./assets/PingFangHK-Regular.ttf') format('truetype');
-  font-weight: normal;
-  font-style: normal;
-}
-
-html,
-body,
-#root {
-  font-family: "PingFang SC";
-  height: 100vh;
-  width: 100vw;
-  background-color: #f8f8f8;
-}
-
 .drawer-bottom>.drawer-toggle:checked~.drawer-side>*:not(.drawer-overlay) {
   transform: translate(0%, 15vh) !important;
 }

@@ -1,3 +1,4 @@
+import './index.css'
 import { Fragment, useState, useRef, useMemo, useEffect } from 'react';
 import countryJson, { CountryJson } from './countryJson'
 import { getPinyin } from 'tiny-pinyin-mw'
@@ -99,7 +100,7 @@ const CountrySelect = ({ onSelect, onClose, language, height, letterListHide, ar
 
   if (countryList.length === 0) return null
 
-  return <div style={{ height: height }} className={`flex flex-col h-screen overflow-hidden ${className}`}>
+  return <div style={{ height: height }} className={`flex flex-col w-screen h-screen overflow-hidden ${className}`}>
     <div className="flex bg-white justify-center h-11 px-2 shadow-xs fixed z-10 top-0 left-0 right-0">
       <div className="pl-1 w-1/6 flex items-center" onClick={!arrowHide ? onClose : undefined}>
         {!arrowHide && <ArrowSvg />}

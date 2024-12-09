@@ -2,6 +2,8 @@ import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
 import path from 'path'
 import { copyFileSync } from 'fs'
+import tailwindcss from 'tailwindcss'
+import autoprefixer from 'autoprefixer'
 
 // https://vite.dev/config/
 export default defineConfig({
@@ -14,6 +16,14 @@ export default defineConfig({
       }
     }
   ],
+  css: {
+    postcss: {
+      plugins: [
+        tailwindcss,
+        autoprefixer,
+      ],
+    },
+  },
   build: {
     lib: {
       entry: path.resolve(__dirname, 'src/App.tsx'),
@@ -21,14 +31,14 @@ export default defineConfig({
       fileName: (format) => `react-select-country.${format}.js`
     },
     rollupOptions: {
-      external: ['react', 'react-dom', 'tiny-pinyin-mw'],
+      external: ['react', 'react-dom'],
       output: {
         globals: {
           react: 'React',
-          'react-dom': 'ReactDOM',
-          'tiny-pinyin-mw': 'tinyPinyinMw'
+          'react-dom': 'ReactDOM'
         }
       }
-    }
+    },
+    cssCodeSplit: false
   }
 })
