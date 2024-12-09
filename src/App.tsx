@@ -37,11 +37,12 @@ interface CountrySelectProps {
   onClose?: () => void
   language?: string
   height?: number
+  className?: string
   letterListHide?: boolean
   arrowHide?: boolean
 }
 
-const CountrySelect = ({ onSelect, onClose, language, height, letterListHide, arrowHide }: CountrySelectProps) => {
+const CountrySelect = ({ onSelect, onClose, language, height, letterListHide, arrowHide, className }: CountrySelectProps) => {
   const countryRef = useRef(null)
   const [currentLetter, setCurrentLetter] = useState('A')
   const [searchInput, setSearchInput] = useState('')
@@ -98,7 +99,7 @@ const CountrySelect = ({ onSelect, onClose, language, height, letterListHide, ar
 
   if (countryList.length === 0) return null
 
-  return <div style={{ height: height }} className='flex flex-col h-screen overflow-hidden'>
+  return <div style={{ height: height }} className={`flex flex-col h-screen overflow-hidden ${className}`}>
     <div className="flex bg-white justify-center h-11 px-2 shadow-xs fixed z-10 top-0 left-0 right-0">
       <div className="pl-1 w-1/6 flex items-center" onClick={!arrowHide ? onClose : undefined}>
         {!arrowHide && <ArrowSvg />}

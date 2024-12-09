@@ -28,3 +28,4 @@
 | height | number | - | 组件高度 | 否 |
 | letterListHide | boolean | false | 是否隐藏字母列表 | 否 |
 | arrowHide | boolean | false | 是否隐藏箭头 | 否 |
+| className | string | false | class | 否 |

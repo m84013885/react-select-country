@@ -1,6 +1,6 @@
 {
   "name": "react-select-country-mw",
-  "version": "0.0.3",
+  "version": "0.0.5",
   "type": "module",
   "scripts": {
     "dev": "vite",
@@ -52,7 +52,8 @@
   "types": "./dist/index.d.ts",
   "files": [
     "dist",
-    "index.d.ts"
+    "index.d.ts",
+    "README.md"
   ],
   "main": "./dist/react-select-country.umd.js",
   "module": "./dist/react-select-country.es.js",

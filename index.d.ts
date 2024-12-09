@@ -5,6 +5,7 @@ interface CountrySelectProps {
   height?: number;
   letterListHide?: boolean;
   arrowHide?: boolean;
+  className?: string;
 }
 
 declare module 'react-select-country-mw' {
