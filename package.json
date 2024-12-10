@@ -1,6 +1,6 @@
 {
   "name": "react-select-country-mw",
-  "version": "0.0.9",
+  "version": "0.0.10",
   "type": "module",
   "scripts": {
     "dev": "vite",
@@ -50,14 +50,14 @@
     "url": "https://github.com/m84013885/react-select-country/issues"
   },
   "homepage": "https://github.com/m84013885/react-select-country#readme",
-  "types": "./dist/index.d.ts",
+  "types": "dist/index.d.ts",
   "files": [
     "dist",
     "index.d.ts",
     "README.md"
   ],
-  "main": "./dist/react-select-country.umd.js",
-  "module": "./dist/react-select-country.es.js",
+  "main": "dist/react-select-country.cjs.js",
+  "module": "dist/react-select-country.esm.js",
   "exports": {
     ".": {
       "import": "./dist/react-select-country.es.js",

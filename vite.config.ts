@@ -1,7 +1,7 @@
 import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
 import path from 'path'
-import { copyFileSync } from 'fs'
+import { copyFileSync, existsSync } from 'fs'
 import tailwindcss from 'tailwindcss'
 import autoprefixer from 'autoprefixer'
 import cssInjectedByJsPlugin from 'vite-plugin-css-injected-by-js'
@@ -14,7 +14,13 @@ export default defineConfig({
     {
       name: 'copy-dts',
       closeBundle() {
-        copyFileSync('index.d.ts', 'dist/index.d.ts')
+        const src = 'src/react-select-country.d.ts';
+        const dest = 'dist/react-select-country.d.ts';
+        if (existsSync(src)) {
+          copyFileSync(src, dest);
+        } else {
+          console.error(`Error: ${src} does not exist.`);
+        }
       }
     }
   ],
