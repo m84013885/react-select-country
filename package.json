@@ -1,6 +1,6 @@
 {
   "name": "react-select-country-mw",
-  "version": "0.0.10",
+  "version": "0.0.11",
   "type": "module",
   "scripts": {
     "dev": "vite",
@@ -60,6 +60,7 @@
   "module": "dist/react-select-country.esm.js",
   "exports": {
     ".": {
+      "types": "./dist/react-select-country.d.ts",
       "import": "./dist/react-select-country.es.js",
       "require": "./dist/react-select-country.umd.js"
     }
